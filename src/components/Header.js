@@ -16,7 +16,8 @@ const useStyles = makeStyles((theme) => ({
         borderBottom: '1px solid lightgray',
         position: 'fixed',
         top: '0',
-        width: '100%'
+        width: '100%',
+        zIndex: '1'
     },
     header__bg: {
         backgroundColor: '#fff',
