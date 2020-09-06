@@ -43,7 +43,7 @@ const useStyles = makeStyles((theme) => ({
     }
   }));
 
-function Post({image}) {
+function Post({username, captin, imageUrl}) {
 
     const classes = useStyles();
 
@@ -61,12 +61,12 @@ function Post({image}) {
                         <MoreVertIcon />
                     </IconButton>
                     }
-                    title="Shrimp and Chorizo Paella"
+                    title={username}
                     subheader="September 14, 2016"
                 />
                 <CardMedia
                     className={classes.media}
-                    image={image}
+                    image={imageUrl}
                     title="Paella dish"
                 />
                 <CardActions disableSpacing>
@@ -79,8 +79,7 @@ function Post({image}) {
                 </CardActions>
                 <CardContent>
                     <Typography variant="body2" color="textSecondary" component="p">
-                    This impressive paella is a perfect party dish and a fun meal to cook together with your
-                    guests. Add 1 cup of frozen peas along with the mussels, if you like.
+                        {captin}
                     </Typography>
                 </CardContent>
                 <CardContent>
