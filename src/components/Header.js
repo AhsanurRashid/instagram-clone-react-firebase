@@ -6,6 +6,7 @@ import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import logo from '../images/logo.png'
 import Container from '@material-ui/core/Container';
+import MyModal from './MyModal'
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -50,7 +51,7 @@ function Header() {
                             <Typography variant="h6" className={classes.title}>
                                 <img src={logo} alt="" className={classes.logo}/>
                             </Typography>
-                            <Button color="inherit">Login</Button>
+                            <MyModal />
                         </Toolbar>
                     </AppBar>
                 </div>
